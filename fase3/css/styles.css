@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;    
+      
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+header{
+    background: url(/fase3/imagenes1/bn_educacion4.png) no-repeat;
+    background-size: cover;
+    padding: 50px; 
+    text-decoration-color: aliceblue;   
+}
+
+#titulo{
+    color:white;
+    font-size: 88px;
+    display:inline-block;
+}
+
+#titulo2{
+    color:white;    
+    font-size: 40px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: darkgrey;
+    justify-content: center;
+    margin: 15px;
+}
+
+
+#principal{
+    display: flex;
+    flex-direction: column;
+}
+
+nav, .navegador ul, li a{
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu > li{
+    display: inline-block;
+    list-style: none;
+
+}
+
+.menu li a:hover{
+    color: orange;
+    transition: all 0.3s;
+}
+
+.sub_menu{
+    position: absolute;
+    background: gray;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+}
+
+.sub_menu li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu li:hover .sub_menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 30px;
+    background-color: rgba(245, 236, 236, 0.952);
+    padding: 20px;
+}
+
+section{
+    flex: 150px;
+    background-color: rgba(213, 224, 206, 0.966);
+}
+
+footer{
+
+    width: 100%;
+    height: 50px;
+}
+
+iframe{
+    width: 100%;
+    height: 150px;
+    border: none;
+
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row{
+        flex-direction: column;
+    }
+}
