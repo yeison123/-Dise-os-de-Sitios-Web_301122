@@ -848,11 +848,11 @@ html, body {
     width: 80px;
     border-top: 5px solid #fff;
     border-bottom: 3px solid #fff;
-    transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+    transform: translateX(-150%);
+    -moz-transform: translateX(-150%);
+    -webkit-transform: translateX(-150%);
+    -o-transform: translateX(-150%);
+    -ms-transform: translateX(-150%);
 }
 
 .subpage-hero {
